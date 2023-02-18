@@ -36,4 +36,9 @@ function getPreposition(){
     return prepositionList.random()
 }
 
-console.log(`The ${getAdjective()}, ${getColour()} ${getNoun()} ${getVerb()} ${getPreposition()} the ${getAdjective()} ${getNoun()}.`)
+function getEmoticon(){
+    emoticonList = [":)", ";)", ":P", "^.^", "=^.^=", "o.0", "UwU", ":B", ":3"]
+    return emoticonList.random()
+}
+
+console.log(`The ${getAdjective()}, ${getColour()} ${getNoun()} ${getVerb()} ${getPreposition()} the ${getAdjective()} ${getNoun()}. ${getEmoticon()}`)

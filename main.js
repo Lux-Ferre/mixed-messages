@@ -37,8 +37,15 @@ function getPreposition(){
 }
 
 function getEmoticon(){
-    emoticonList = [":)", ";)", ":P", "^.^", "=^.^=", "o.0", "UwU", ":B", ":3"]
-    return emoticonList.random()
+    emoticonList = ["^.^", "=^.^=", "o.0", "UwU"]
+    emoteEyes = [":", ";"]
+    emoteMouth = [")", "P", "B", "3", "(", "'("]
+
+    if (Math.random() < 0.5){
+        return emoticonList.random()
+    } else {
+        return emoteEyes.random() + emoteMouth.random()
+    }
 }
 
 console.log(`The ${getAdjective()}, ${getColour()} ${getNoun()} ${getVerb()} ${getPreposition()} the ${getAdjective()} ${getNoun()}. ${getEmoticon()}`)
